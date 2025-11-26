@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site oficial da Banda Genérica. Confira novas músicas, datas da turnê e merchandise."
+    />
+    <title>Banda Genérica | Oficial</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <script type="module" src=""></script>  -->
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container nav-container">
+        <a href="#" class="logo">BANDA GENÉRICA</a>
+
+        <button class="menu-toggle" id="js-menu-toggle" aria-label="Abrir menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav class="main-nav" id="js-main-nav">
+          <ul class="nav-list">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#music">Música</a></li>
+            <li><a href="#tour">Turnê</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact" class="btn btn-small">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <h1 class="hero-title">
+            O Novo Álbum <br />
+            <span class="highlight">"Jounin"</span>
+          </h1>
+          <p class="hero-subtitle">
+            Já disponível em todas as plataformas digitais.
+          </p>
+          <div class="hero-actions">
+            <a href="#music" class="btn btn-primary">Ouvir Agora</a>
+            <a href="#tour" class="btn btn-outline">Ver Datas</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="music" class="section-padding bg-dark">
+        <div class="container">
+          <h2 class="section-title">Último Lançamento</h2>
+          <div class="music-grid">
+            <div class="album-art">
+              <img
+                src="https://placehold.co/600x600/1a1a1a/FFF?text=Capa+do+Album"
+                alt="Capa do álbum Jounin"
+              />
+            </div>
+            <div class="album-details">
+              <h3>Jounin (2025)</h3>
+              <p>
+                Uma jornada sonora através do rock alternativo e sintetizadores
+                modernos. Inclui os sucessos "Genin" e "Chuunin".
+              </p>
+
+              <div class="streaming-links">
+                <a href="#" class="streaming-btn spotify">Spotify</a>
+                <a href="#" class="streaming-btn apple">Apple Music</a>
+                <a href="#" class="streaming-btn youtube">YouTube</a>
+              </div>
+
+              <div class="audio-player-placeholder" id="js-audio-player">
+                <audio controls class="native-audio" preload="auto">
+                  <source src="#" type="audio/mp4" />
+                  Seu navegador não suporta áudio.
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tour" class="section-padding">
+        <div class="container">
+          <h2 class="section-title">Turnê 2025</h2>
+          <div class="tour-list">
+            <article class="tour-item">
+              <div class="tour-date">
+                <span class="day">15</span>
+                <span class="month">NOV</span>
+              </div>
+              <div class="tour-info">
+                <h3 class="venue">Cine Joia</h3>
+                <p class="location">São Paulo, SP</p>
+              </div>
+              <div class="tour-action">
+                <a href="#" class="btn btn-primary">Ingressos</a>
+              </div>
+            </article>
+
+            <article class="tour-item">
+              <div class="tour-date">
+                <span class="day">22</span>
+                <span class="month">NOV</span>
+              </div>
+              <div class="tour-info">
+                <h3 class="venue">Circo Voador</h3>
+                <p class="location">Rio de Janeiro, RJ</p>
+              </div>
+              <div class="tour-action">
+                <a href="#" class="btn btn-primary">Ingressos</a>
+              </div>
+            </article>
+
+            <article class="tour-item sold-out">
+              <div class="tour-date">
+                <span class="day">05</span>
+                <span class="month">DEZ</span>
+              </div>
+              <div class="tour-info">
+                <h3 class="venue">Opinião</h3>
+                <p class="location">Porto Alegre, RS</p>
+              </div>
+              <div class="tour-action">
+                <span class="btn btn-disabled">Esgotado</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-padding bg-dark">
+        <div class="container contact-container">
+          <div class="contact-text">
+            <h2 class="section-title">Fique por dentro</h2>
+            <p>
+              Inscreva-se na nossa newsletter para receber notícias, pré-vendas
+              exclusivas e atualizações de bastidores.
+            </p>
+          </div>
+
+          <form class="newsletter-form" id="js-newsletter-form">
+            <div class="input-group">
+              <label for="email" class="sr-only">Seu e-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Seu melhor e-mail"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Inscrever-se</button>
+          </form>
+          <p class="form-message" id="js-form-message"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+        <p>&copy; 2025 Banda Genérica. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
