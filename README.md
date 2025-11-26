@@ -1,8 +1,8 @@
 # Apresentação
 
-- **Projeto:** Desafio final do curso de JavaScript — uma Landing Page de Banda com conteúdo dinâmico.
-- **Contexto:** Material desenvolvido para demonstrar consumo de APIs públicas, manipulação do DOM e integração de áudio usando JavaScript puro.
-- **Objetivo:** Criar uma página responsiva que carregue músicas, imagens, notícias e datas de turnê dinamicamente, sem depender de backend próprio.
+- **Projeto:** Desafio final do curso de JavaScript — uma Landing Page de Banda.
+- **Contexto:** Material desenvolvido para demonstrar consumo de APIs públicas, manipulação do DOM e integrações com JavaScrpit puro.
+- **Objetivo:** Criar uma página responsiva que carregue músicas, imagens, notícias e datas de turnê dinamicamente.
 - **Requisitos do desafio:** Para concluir este desafio, cumpra os seguintes requisitos ([texto original com referências](https://app.notesnook.com/notebooks/691c9346d200264f47d3494e)). 
 
   - Personalizar a Learning Page para uma banda de sua preferência.
